@@ -5,9 +5,11 @@
 </head>
 
 <body>
-    <div class="bg-gradient-to-br from-red-400 to-red-300 flex justify-center items-center h-full">
+    <div class="bg-gradient-to-br from-red-400 to-red-300 flex flex-col justify-center items-center h-full">
         <div>
-            <h1 class="text-9xl font-bold text-neutral-900">{{ .Name }}</h1>
+            <h1 class="bg-neutral-50 px-2 rounded-sm text-9xl font-bold text-neutral-900">
+                {{ .Name }}
+            </h1>
             <div class="h-32"></div>
         </div>
     </div>
