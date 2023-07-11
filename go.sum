@@ -1,3 +1,5 @@
+github.com/a-h/templ v0.2.304 h1:vIgCNazkW6NiYifFIGYNRfBkoBzOMZMO1NibIayzihE=
+github.com/a-h/templ v0.2.304/go.mod h1:3oc37WS5rpDvFGi6yeknvTKt50xCu67ywQsM43Wr4PU=
 github.com/go-chi/chi/v5 v5.0.8 h1:lD+NLqFcAi1ovnVZpsnObHGW4xb4J8lNmoYVfECH1Y0=
 github.com/go-chi/chi/v5 v5.0.8/go.mod h1:DslCQbL2OYiznFReuXYUmQ2hGd1aDpCnlMNITLSKoi8=
 github.com/lib/pq v1.10.9/go.mod h1:AlVN5x4E4T544tWzH6hKfbfQvm3HdbOxrmggDNAPY9o=

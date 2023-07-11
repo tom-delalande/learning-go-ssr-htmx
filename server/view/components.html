@@ -1,0 +1,23 @@
+< /> {{define "home"}}
+<div>
+    <h1 class="px-2 rounded-sm text-9xl font-bold text-neutral-900">Todo List</h1>
+    <div class="h-32"></div>
+</div>
+{{end}}
+< /> {{define "todo-items"}}
+<div id="list-items" class="flex flex-col gap-4">
+    {{ range $index, $element := .Items }}
+    <btn hx-post="/remove-todo/index/{{ $index }}" hx-target="#list-items"
+        class="hover:bg-neutral-300 hover:cursor-pointer bg-neutral-100 p-4 rounded-sm w-60">{{ .Name }}</btn>
+    {{ end }} {{ template "todo-input" . }}
+</div>
+{{end}}
+< /> {{ define "todo-input" }}
+<form hx-post="/add-todo" class="flex flex-row gap-2">
+    <input type="text" class="p-4 rounded-sm" placeholder="Aa" name="name" />
+    <button type="submit" hx-post="/add-todo" hx-target="#list-items"
+        class="bg-red-500 p-4 rounded-sm text-white hover:cursor-pointer">
+        Add
+    </button>
+</form>
+{{ end }}

@@ -2,15 +2,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="output.css" rel="stylesheet" />
+    <script src="https://unpkg.com/htmx.org@1.9.2"
+        integrity="sha384-L6OqL9pRWyyFU3+/bjdSri+iIphTN/bvYyM37tICVyOJkWZLpP2vGn6VUEXgzg6h"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="bg-gradient-to-br from-red-400 to-red-300 flex flex-col justify-center items-center h-full">
-        <div>
-            <h1 class="bg-neutral-50 px-2 rounded-sm text-9xl font-bold text-neutral-900">
-                {{ .Name }}
-            </h1>
-            <div class="h-32"></div>
-        </div>
+    <div class="bg-gradient-to-br from-red-400 to-red-300 flex flex-col justify-center items-center h-full gap-4">
+        {{template "home" . }} {{template "todo-items" .}}
     </div>
 </body>
